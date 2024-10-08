@@ -1,5 +1,5 @@
 // Karlina Maya
-// Last updated 03/13/2024
+// Last updated 10/08/2024
 
 // declaring constants
 const container = document.querySelector(".container");
@@ -145,8 +145,8 @@ function setPiece(startCount, colValue) {
         
             // checking if current move results in a win
             if (winCheck(startCount, colValue)) {
-                // update message to display winner
-                message.innerHTML = `Player<span> ${currentPlayer}</span> wins`;
+                // display a popup alert announcing the winner
+                alert(`Player ${currentPlayer} wins!`);
                 return false;
             }
         }
@@ -159,6 +159,7 @@ function setPiece(startCount, colValue) {
         alert("Column full, select again");
     }
 }
+
 
 function fillBox(e)
 {
